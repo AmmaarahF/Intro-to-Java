@@ -13,5 +13,25 @@ Installing JDK
 - https://www.oracle.com/java/technologies/downloads/
 - Java JDK link
 
+Java Variables
+-------------------------
+- <b>Dynamically Typed</b> - Variable types are determined at runtime through context in the code.
+- <b>Statically Typed</b> - Variables types must be declared before the program can be compiled.
 
+Declaring a variable 
+-------------------------
+eg. var isWaterWet = true;
+    int five;
+
+Decision Structures in Java
+--------------------------------
+- if statements - The if statement works like a side road in the program. If a certain situation happens, the program takes that side road and executes a certain block of code, then it goes back to the main path of execution.
+
+- If-else Statements - The if-else statement is a decision structure that allows a program to take one of two paths, depending on whether a certain condition is met.
+
+- If-Else-If Statements - The if-else-if statement is a versatile tool that can be used to control the flow of a program. It can be used to execute different code blocks based on multiple conditions.
+
+Switch Statements
+-----------------------------
+- 
 
