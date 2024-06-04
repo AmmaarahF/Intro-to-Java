@@ -100,3 +100,5 @@ Variable Scope
 
 Objects in Java
 --------------------------------
+- objects are like containers holding data and actions.
+- 
