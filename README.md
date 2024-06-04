@@ -33,5 +33,28 @@ Decision Structures in Java
 
 Switch Statements
 -----------------------------
+- The switch statement works like the if-else-if decision structure, perfect for situations with more than two options. The key distinction is that if-else-if checks conditions, while the switch statement checks for equality.
+
+Switch Expressions
+----------------------------
+- Switch expressions are like switch statements, but they are more convenient. Instead of separately declaring a message and then assigning it with a switch statement, you can simplify things with switch expressions.
+- eg, System.out.println("Enter grade");
+<br>
+      String message = switch(grade){
+         case "A" , "B" -> "Exellent job!";
+         case "C" -> "Good job!";
+         case "D" -> "You need to work a bit harder";
+         case "F" -> "Uh oh!";
+         default -> "Error. Invalid grade";
+  };
+
+
+<br>
+
+Relational Operators
+-------------------------------
+- Relational operators are these symbols that you use when you are dealing with conditions.
+- eg, > , <, >= , <= , == , !=
 - 
+
 
