@@ -55,6 +55,24 @@ Relational Operators
 -------------------------------
 - Relational operators are these symbols that you use when you are dealing with conditions.
 - eg, > , <, >= , <= , == , !=
-- 
 
+
+Logical Operators
+-----------------------------
+- Logical operators let you mix and match conditions to give you one clear yes or no answer, like a Boolean value. They come in handy when you have tricky requirements for making decisions.
+- eg., && , || , and !
+
+
+Short Circuit Logic
+------------------------------
+- The 'and' and 'or' logical operators help us combine two conditions into one. When we use 'and,' both conditions must be true. If the first condition is false, there is no need to check the second one because both have to be true for the whole thing to be true.
+- When using the && operator , if one condition is false, the the entire condiion is false.
+- When using the || operator, if one is True then the entur confition is true.
+- with 'or,' if the first condition is true, there is no need to bother with the second condition.
+
+
+Repetition Structures in Java
+--------------------------------
+- While Loop
+  > Runs the code over and over until the condition is met.
 
