@@ -75,4 +75,28 @@ Repetition Structures in Java
 --------------------------------
 - While Loop
   > Runs the code over and over until the condition is met.
+- Do While Loop
+  > Loop that executes, then checks the condition to determine whether to repeat.
+- For Loop
+  > Loop that executes a specified number of times.
+- Nested Loops
+  > Loops inside of loops
+- Break Statement
+  > A break statement will end a loop no matter what iteration it's on.
 
+<br>
+
+Methods in Java
+---------------------------------
+- Creating Methods
+  > eg., public static int calculateSum(int num1, int num2){
+      int sum = num1 + num2;
+      return sum;
+  }
+
+Variable Scope
+--------------------------------
+- Variables are only valid within the scope in which they were defined.
+
+Objects in Java
+--------------------------------
