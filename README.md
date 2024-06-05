@@ -110,3 +110,71 @@ Java Constructors
 - eg., public Dog(String name) {<br>
         this.name = name;<br>
     }
+
+
+Object Instantiation
+----------------------------------
+- Object instantiation in Java involves creating a new instance of a class using the new keyword, which calls the class's constructor.
+-  public Car(String model) {<br>
+        this.model = model;<br>
+    }
+- eg., Rectangle room1 = new Rectangle();
+
+Method Parameters as Objects
+--------------------------------------
+- In Java, you can pass objects as parameters to methods, allowing the method to operate on the object's attributes and methods
+- eg., public Book(String title) { //constructor<br> 
+        this.title = title;<br>
+    }
+<br>
+    // Method that takes an object as a parameter<br>
+    public static void printBookTitle(Book book) {<br>
+        System.out.println(book.title);<br>
+    }
+
+
+  Wrapper Classes
+  -----------------------------
+  - wrapper classes provide a way to use primitive data types (like int, boolean, etc.) as objects. They are useful for situations where you need an object instead of a primitive type, such as in collections like ArrayList, which can only store objects.
+  - eg.,  Integer integerObject = Integer.valueOf(10); // Boxing/Object <br>
+        int primitiveInt = integerObject.intValue(); // Unboxing
+
+  Records
+  ----------------------------
+  - Records provide a concise way to create immutable data classes that automatically provide implementations for common methods like equals(), hashCode(), and toString().
+  - eg., public record Person(String name, int age) { <br>
+}
+
+Inheritance
+------------------------------
+- Inheritance is like when a new class takes on all the stuff from another class, becoming an extension of it.
+- Inheritance allows one class (subclass) to inherit fields and methods from another class (superclass), enabling code reuse.
+- eg.,<pre> // Superclass <br>
+class Animal { <br>
+    void eat() { <br>
+        System.out.println("This animal eats food."); <br>
+    }<br>
+}<br></pre>
+<br>
+<pre>// Subclass<br>
+class Dog extends Animal {<br>
+    void bark() {<br>
+        System.out.println("The dog barks.");<br>
+    }<br>
+} <br>
+<br></pre>
+<pre>// Main class to test inheritance<br>
+public class Main {<br>
+    public static void main(String[] args) {<br>
+        Dog dog = new Dog();<br>
+        dog.eat(); // Inherited method<br>
+        dog.bark(); // Subclass method<br>
+    }<br>
+}<br>
+<br></pre>
+
+Sealed Classes
+------------------------------
+- Sealed classes in Java provide a way to restrict which classes can extend or implement them.
+- This feature was introduced to improve control over inheritance and ensure a more predictable and maintainable class hierarchy.
+- By using sealed classes, you can explicitly specify a limited set of permitted subclasses.
