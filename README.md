@@ -178,3 +178,42 @@ Sealed Classes
 - Sealed classes in Java provide a way to restrict which classes can extend or implement them.
 - This feature was introduced to improve control over inheritance and ensure a more predictable and maintainable class hierarchy.
 - By using sealed classes, you can explicitly specify a limited set of permitted subclasses.
+
+
+Polymorphism
+-----------------------------
+- Polymorphism allows objects of different classes to be treated as objects of a common superclass, enabling method overriding.
+- eg.,<pre> // Superclass 
+class Animal {
+    void makeSound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+</pre>
+<pre>// Subclass Dog
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Dog barks");
+    }
+}
+</pre>
+<pre>// Subclass Cat
+class Cat extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Cat meows");
+    }
+}
+</pre>
+<pre>// Main class to test polymorphism
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog(); // Treat Dog as an Animal
+        Animal myCat = new Cat(); // Treat Cat as an Animal
+
+        myDog.makeSound(); // Outputs: Dog barks
+        myCat.makeSound(); // Outputs: Cat meows
+    }
+}
+</pre>
