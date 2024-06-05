@@ -101,4 +101,12 @@ Variable Scope
 Objects in Java
 --------------------------------
 - objects are like containers holding data and actions.
-- 
+
+
+Java Constructors
+----------------------------------
+- Java constructors initialize new objects.
+- They have the same name as the class and no return type.
+- eg., public Dog(String name) {<br>
+        this.name = name;<br>
+    }
